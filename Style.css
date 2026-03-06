@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200px;
+    font-style: normal;
+  }
+
 :root{
     --primary:#0056a6;
     --secondary: #E4EDFF;
@@ -13,7 +22,9 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: "Inter";
 }
+
 nav {
     display:flex;
     flex-direction: row;
@@ -37,7 +48,7 @@ nav {
     margin-right:5%
 }
 
-a{
+.options{
     color:#0056a6;
     background-color: white;
     padding:2% 4%;
@@ -45,10 +56,17 @@ a{
     text-decoration:none;
     border-radius:40px;
     font-size:48px;
+    transition: background-color 0.2s ease-in-out 0.0s;
 }
-a:has(*) {
+
+.options:hover {
+background-color: #E4EDFF;
+}
+
+.options:has(*) {
     background-color: transparent;
 }
+
 .start{
     color:var(--primary);
 }
@@ -90,7 +108,26 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    font-size: 30px;
+    text-align: center;
+    transition: background-color 0.2s ease-in-out 0.0s;
+    border-radius: 40px;
+    text-decoration: none;
 }
 
+.green:hover {
+    background-color:green;
+}
 
+.budget {
+border: transparent;
+height: 70px;
+width:  300px;
+border-radius: 40px;
+}
+
+label {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+}
