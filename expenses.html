@@ -9,7 +9,7 @@
 <body>
     <nav>
         <a href="index.html" class="logo">  <img src="th 1.png" alt="Logo" class="logo"></a>
-        <p> Wise Up! Budget Calculator</p>
+        <h2> Wise Up! Budget Calculator</h2>
         <a class="options" href="index.html">Budget</a>
         <a class="options" href="expenses.html">Expenses</a>
         <a class="options" href="results.html" class="last">Results</a>
@@ -84,7 +84,7 @@
         <input class="budget" type="Number">
     </div>
     </section>
-
+    <span class="expenses-leftover">
     <h2 class="fun">Expenses: Fun Expenses</h2>
 
     <section class="fun-Expenses">
@@ -123,15 +123,16 @@
             </div>    
             <input class="budget" type="Number">
         </div>
-
-
+<section class="leftover-budget">
+    <h3>Leftover:<span id="net-income">N/A</span></h3>
+<!--pie chart here-->
+</section>
     </section>
+</span>
 
-        <button class="addExpense" id="add" onclick="addTaskToList()">Add Expense</button>
-        <button class="addExpense" id="remove" onclick="">Remove Expense</button>
-        <span id="add-cont">
-
-        </span>
+        <button class="expenses-btn" id="add" onclick="addTaskToList()">Add Expense</button>
+        <button class="expenses-btn" id="remove" onclick="">Remove Expense</button>
+        <span id="add-cont"></span>
 
     <footer>
     <a href="results.html" class="green">Let's see the results!</a>
