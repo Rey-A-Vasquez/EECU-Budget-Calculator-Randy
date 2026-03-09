@@ -1,3 +1,4 @@
+const addTaskBtn = getElementById("add"); 
 let task = JSON.parse(localStorage.getItem("Job")) || []; // Load task from local storage or empty array
 
 async function getSalary(career) //get career salary from API
@@ -12,6 +13,8 @@ async function getSalary(career) //get career salary from API
     }
 }
 
+function addTaskToList() {
+    document.getElementById("add-cont").innerHTML = "<input type='number' class='new' id='new-expense'>";
+    console.log('works');
 
-
-
+}
